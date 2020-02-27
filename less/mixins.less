@@ -10,8 +10,15 @@
 	        color: @acolor; 
 			font-size: @afont-size;
             text-decoration: @atxt-decor;
+            text-shadow: 1px 1px 1px #3e5e78;
+            letter-spacing: 2%;
             &:hover {
                 background-color: @bg-color-hover;
+                border-right: 2px dotted @dotted-hover-border;
+                border-left: 2px dotted @dotted-hover-border;
+               
+                padding-bottom: 20px;
+                color: #B41E57;
             }//&:hover of custom-a
 }//custom-a
 
@@ -53,7 +60,7 @@
   border: none; 
   box-shadow: 0 9px #999;
 
-  &:hover {background-color: @bg-color-active}
+  &:hover {background-color: @nav-bg}
 
 &:active {
   background-color: @bg-color-active;

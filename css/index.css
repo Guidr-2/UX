@@ -195,17 +195,28 @@ img {
   justify-content: flex-end;
   align-items: center;
   width: 70%;
+  padding-right: 2%;
 }
 .main-nav .nav-links a {
-  width: 30%;
-  color: #292929;
-  font-size: 1.8rem;
+  width: 20%;
+  color: white;
+  font-size: 2rem;
   text-decoration: none;
+  text-shadow: 1px 1px 1px #3e5e78;
+  letter-spacing: 2%;
   text-align: center;
+  font-weight: bolder;
   padding: 1%;
+  transition: 0.6s;
+  border-right: 2px dotted transparent;
+  border-left: 2px dotted transparent;
 }
 .main-nav .nav-links a:hover {
-  background-color: #11807F;
+  background-color: #9DC3E3;
+  border-right: 2px dotted #FFFFFF;
+  border-left: 2px dotted #FFFFFF;
+  padding-bottom: 20px;
+  color: #B41E57;
 }
 /*End  of navigation*/
 .showcase {
