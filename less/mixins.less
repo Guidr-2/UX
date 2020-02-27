@@ -41,31 +41,87 @@
     
 }
 
-.custom-btn(@bg-color, @width, @font-color,@bg-color-active){
-	
-    background-color: @bg-color;
+.custom-button(@width){
+    position: relative;
+    background-color: #308FBB;
+    border: none;
+    border-radius: 5px;
+    font-size: 2rem;
+    color: #FFFFFF;
+    padding: 10px;
     width: @width;
-    height: 44px;
-    font-size: 2.1rem;
-    color: @font-color;
     text-align: center;
-    padding-top: 5%;
-    border-radius: 13px;
-    margin-bottom: 0;
-    margin-left: 0;
-
-    //-----------------------
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
     cursor: pointer;
-  outline: none;
-  border: none; 
-  box-shadow: 0 9px #999;
+    margin: 2%;
 
-  &:hover {background-color: @nav-bg}
+    &:after {
+        content: "";
+        background: #9FC4D9;
+        display: block;
+        position: absolute;
+        padding-top: 300%;
+        padding-left: 350%;
+        margin-left: -20px!important;
+        margin-top: -120%;
+        opacity: 0;
+        transition: all 0.8s;
+        border: none;
+      }//&:after of custom-button
 
-&:active {
-  background-color: @bg-color-active;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
+      &:active:after {
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+        transition: 0s;
+        border: none;
+      }//&:active:after of custom-button
 
-}
+      &:hover{
+        color:#B5144E;
+        font-weight: bolder;
+        letter-spacing: 3%;
+       
+       
+    }//&:hover of custom-button
+
+
+  }//custom-button
+  
+  
+  
+ 
+  
+
+
+// .custom-btn(@bg-color, @width, @font-color,@bg-color-active){
+	
+//     background-color: @bg-color;
+//     width: @width;
+//     height: 44px;
+//     font-size: 2.1rem;
+//     color: @font-color;
+//     text-align: center;
+//     padding-top: 1%;
+//     border-radius: 13px;
+//     margin-bottom: 0;
+//     margin-left: 0;
+
+//     //-----------------------
+//     cursor: pointer;
+//   outline: none;
+//   border: none; 
+//   box-shadow: 0 9px #999;
+
+//   &:hover {background-color: @nav-bg}
+
+// &:active {
+//   background-color: @bg-color-active;
+//   box-shadow: 0 5px #666;
+//   transform: translateY(4px);
+// }
+
+// }
