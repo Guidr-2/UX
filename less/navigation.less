@@ -3,12 +3,15 @@
 .main-nav{
     .custom-layout(space-between, center);
      margin: 2% 0 0 0;
-     //background: rgb(174, 206, 233);
-     background: #9DC3E3;
+     //background: #9DC3E3;
+background: @nav-bg;
+     //min-height:70px;
+     margin-bottom: 0;
      
 
      .logo{
         width: 28%;
+        padding: 1%;        
     }//logo
     
     .nav-links{
@@ -17,7 +20,7 @@
 
         a {
 			width: 30%;
-			.custom-a(#292929, 1.8rem, none);
+			.custom-a(#292929, 1.8rem, none, @nav-a-hover-bg);
             text-align: center;
             padding: 1%;
         }//this closes a

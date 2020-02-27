@@ -6,14 +6,33 @@
 	align-items: @align;
 }
 
-.custom-a(@acolor, @afont-size, @atxt-decor, @bg-color-active){
-	color: @acolor; 
+.custom-a(@acolor, @afont-size, @atxt-decor, @bg-color-hover){
+	        color: @acolor; 
 			font-size: @afont-size;
             text-decoration: @atxt-decor;
             &:hover {
-                background-color: @bg-color-active;
+                background-color: @bg-color-hover;
             }//&:hover of custom-a
 }//custom-a
+
+.custom-a-read-more(@acolor:#0067b8, @afont-size: 1.3rem, @afont-weight:bold){
+    
+        padding-top: 1%;
+        color: @acolor;
+        text-transform: uppercase;
+        font-weight: @afont-weight;
+        font-size: @afont-size;
+        text-decoration: none;
+
+        &:hover{
+            font-size: 1.5rem;
+        }
+
+        &:hover i {
+            margin-left: 10px;           
+        }
+    
+}
 
 .custom-btn(@bg-color, @width, @font-color,@bg-color-active){
 	
