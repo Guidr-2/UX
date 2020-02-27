@@ -40,7 +40,7 @@ STRETCH
 
 ## Task 2: Based on the "duration" of each trip, in hours, aggregate the trip durations and have a widget that displays how many private and professional hours a "Guide" has across their various categories.
 
-## 
+
 ## Task 3: Implement a feature that allows a "Guide" to send/print their outdoor resume in PDF format to give to potential employers, guide licensing organizations, etc.
 
 
