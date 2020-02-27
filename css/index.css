@@ -168,3 +168,30 @@ img {
   max-width: 100%;
   height: auto;
 }
+/*Navigation section*/
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2% 0;
+  margin-left: 9%;
+}
+.main-nav .logo {
+  width: 30%;
+}
+.main-nav .nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  width: 70%;
+}
+.main-nav .nav-links a {
+  width: 20%;
+  color: #292929;
+  font-size: 1.8rem;
+  text-decoration: none;
+  text-align: center;
+}
+/*End  of navigation*/

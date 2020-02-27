@@ -1,0 +1,13 @@
+// Mixins in here
+.custom-layout(@justify,@align){
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: @justify;
+	align-items: @align;
+}
+
+.custom-a(@acolor, @afont-size, @atxt-decor){
+	color: @acolor; 
+			font-size: @afont-size;
+            text-decoration: @atxt-decor;
+}
