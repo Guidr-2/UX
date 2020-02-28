@@ -64,14 +64,34 @@
     flex-direction: column;
     flex-wrap: wrap;
     
+    @media @tablet{
+      width: 100%;
+      max-width: 800px;
+    }
+
+    @media @mobile{
+      width: 100%;
+      max-width: 500px;
+    }
     
 
   }
 
   .container {
     
-    width: 100%;
+    width: 98%;
     max-width: 1000px;
     margin: auto;
+
+    @media @tablet{
+      width: 98%;
+      max-width: 800px;
+      margin-left: 2%;
+      margin-right: 2%;
+    }
+    @media @mobile{
+      width: 100%;
+      max-width: 500px;
+    }
 }
   

@@ -20,7 +20,7 @@ background: @nav-bg;
         padding-right: 2%;
 
         a {
-			width: 17%;
+			width: 20%;
             .custom-a(white, 2rem, none, @nav-bg);
             text-align: center;
             font-weight: bolder;
@@ -28,6 +28,23 @@ background: @nav-bg;
             transition: 0.6s;
             border-right: 2px dotted transparent;
             border-left: 2px dotted transparent;
+
+            &:hover{
+                @media @mobile{
+                    padding-bottom: 10px;
+                }
+
+            }
+
+            @media @tablet{
+                width: 23%;
+                
+            }
+            @media @mobile{
+                width: 30%;
+                font-weight: normal;
+                font-size: 2rem;
+            }
             
         }//this closes a
 
