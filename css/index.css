@@ -237,7 +237,7 @@ img {
   color: #B41E57;
   font-size: 2rem;
   text-decoration: none;
-  text-shadow: 1px 1px 1px #3e5e78;
+  text-shadow: 1px 1px 1px #e9ebee;
   letter-spacing: 2%;
   text-align: center;
   font-weight: bolder;
@@ -252,6 +252,7 @@ img {
   border-left: 2px dotted #FFFFFF;
   padding-bottom: 20px;
   color: white;
+  text-shadow: 1px 1px 1px #3e5e78;
 }
 @media (max-width: 500px) {
   .main-nav .nav-links a:hover {
@@ -471,6 +472,10 @@ img {
   margin-top: 2%;
   text-align: center;
   margin: 2% 0;
+}
+.who-we-are h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
 }
 .middle-about {
   width: 80%;
