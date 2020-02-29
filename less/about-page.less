@@ -31,6 +31,8 @@
     h3{
         font-size: 2.8rem;
         margin-bottom: 1%; 
+        padding-left: 2%;
+        padding-right: 2%;
 
         @media @tablet{
             font-size: 3rem;
@@ -44,7 +46,7 @@
 
     }//box-inside-showcase
 
-}
+}//about-showcase
 
 .who-we-are{
     margin-top: 2%;
@@ -65,18 +67,21 @@
     display: grid;
     
     grid-template-columns: 20% 70%;
-    grid-gap: 20px;
+    //grid-gap: 20px;
+    grid-gap: 5%;
     margin-bottom: 1%;
 
     @media @tablet{
         width: 80%;
         grid-template-columns: 1fr 1fr;
+       
     }
 
     @media @mobile{
         margin-left: 25%;
         width: 50%;
         grid-template-columns: 1fr;
+        grid-gap: 0%;
     }
 
     img {
@@ -93,6 +98,13 @@
     }
     .about-media{
         
+        @media @tablet{
+            .custom-layout(center,center);
+            flex-direction: column;
+            img{
+                width: 80%;
+            }
+        }
     
     @media @mobile{
         .custom-layout(center,center);
