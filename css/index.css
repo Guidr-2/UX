@@ -234,7 +234,7 @@ img {
 }
 .main-nav .nav-links a {
   width: 20%;
-  color: white;
+  color: #B41E57;
   font-size: 2rem;
   text-decoration: none;
   text-shadow: 1px 1px 1px #3e5e78;
@@ -251,7 +251,7 @@ img {
   border-right: 2px dotted #FFFFFF;
   border-left: 2px dotted #FFFFFF;
   padding-bottom: 20px;
-  color: #B41E57;
+  color: white;
 }
 @media (max-width: 500px) {
   .main-nav .nav-links a:hover {
@@ -260,7 +260,7 @@ img {
 }
 @media (max-width: 800px) {
   .main-nav .nav-links a {
-    width: 23%;
+    width: 28%;
   }
 }
 @media (max-width: 500px) {
@@ -437,6 +437,7 @@ img {
   background-color: rgba(119, 179, 228, 0.4);
   color: white;
   text-shadow: 1px 1px 1px #36383a;
+  text-align: center;
 }
 .about-showcase .box-inside-showcase h2 {
   padding-bottom: 1%;
@@ -449,12 +450,22 @@ img {
 }
 @media (max-width: 500px) {
   .about-showcase .box-inside-showcase h2 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 }
 .about-showcase .box-inside-showcase h3 {
   font-size: 2.8rem;
   margin-bottom: 1%;
+}
+@media (max-width: 800px) {
+  .about-showcase .box-inside-showcase h3 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .about-showcase .box-inside-showcase h3 {
+    display: none;
+  }
 }
 .who-we-are {
   margin-top: 2%;
@@ -462,6 +473,8 @@ img {
   margin: 2% 0;
 }
 .middle-about {
+  width: 80%;
+  margin-left: 10%;
   display: grid;
   grid-template-columns: 20% 70%;
   grid-gap: 20px;
@@ -469,6 +482,14 @@ img {
 }
 @media (max-width: 800px) {
   .middle-about {
+    width: 80%;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .middle-about {
+    margin-left: 25%;
+    width: 50%;
     grid-template-columns: 1fr;
   }
 }
@@ -481,8 +502,25 @@ img {
   font-size: 2rem;
   text-align: center;
 }
+@media (max-width: 500px) {
+  .about-photos .about-media {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .about-photos .about-media img {
+    width: 60%;
+  }
+}
 .follow-about a {
   width: 10%;
+}
+@media (max-width: 500px) {
+  .follow-about a {
+    width: 15%;
+  }
 }
 footer {
   background: #f2f2f2;
@@ -502,9 +540,17 @@ footer .blog-company-links {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+@media (max-width: 500px) {
+  footer .blog-company-links {
+    grid-template-columns: 1fr;
+  }
+}
 footer li {
   line-height: 2.5;
   text-align: center;
+}
+footer li a {
+  color: #616161;
 }
 footer .copy {
   padding-top: 1%;
@@ -515,5 +561,10 @@ footer h3 {
 @media (max-width: 800px) {
   footer {
     padding: 0;
+  }
+}
+@media (max-width: 500px) {
+  footer {
+    margin-top: 2%;
   }
 }
