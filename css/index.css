@@ -286,6 +286,11 @@ img {
   padding-bottom: 50px;
   margin-bottom: 20px;
 }
+.showcase .showcase-title {
+  padding-bottom: 1%;
+  width: 100%;
+  background-color: rgba(8, 52, 88, 0.1);
+}
 .showcase h2 {
   padding-top: 2%;
   letter-spacing: 0.15rem;
@@ -435,7 +440,7 @@ img {
   flex-direction: column;
   padding: 1%;
   margin-bottom: 1%;
-  background-color: rgba(119, 179, 228, 0.4);
+  background-color: rgba(8, 52, 88, 0.2);
   color: white;
   text-shadow: 1px 1px 1px #36383a;
   text-align: center;
