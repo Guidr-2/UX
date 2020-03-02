@@ -364,6 +364,37 @@ img {
   width: 100%;
   margin-bottom: 20px;
 }
+.read-more-details {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 2%;
+  margin-top: 2%;
+}
+.read-more-details h3 {
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 1%;
+}
+@media (max-width: 800px) {
+  .read-more-details {
+    grid-template-columns: 1fr;
+  }
+}
+.read-more-details img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.reverse {
+  grid-template-columns: 2fr 1fr;
+}
+@media (max-width: 800px) {
+  .reverse {
+    grid-template-columns: 1fr;
+  }
+  .reverse img {
+    display: none;
+  }
+}
 /* Follow Us*/
 .follow-us {
   display: flex;
@@ -548,9 +579,14 @@ img {
 .follow-about a {
   width: 10%;
 }
+@media (max-width: 800px) {
+  .follow-about a {
+    width: 3rem;
+  }
+}
 @media (max-width: 500px) {
   .follow-about a {
-    width: 15%;
+    width: 4rem;
   }
 }
 footer {

@@ -83,6 +83,41 @@
     }//img of home-photos
 }
 
+
+
+.read-more-details{
+    display: grid;
+    
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 2%;
+    margin-top: 2%;
+    h3{
+        font-size: 3rem;
+        text-align: center;
+        padding-bottom: 1%;
+    }
+
+    @media @tablet{
+        grid-template-columns: 1fr;
+    }
+
+    img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
+.reverse{
+    grid-template-columns: 2fr 1fr;
+
+    @media @tablet{
+        grid-template-columns: 1fr;
+        img{
+            display: none;
+        }
+    }
+}
+
 /* Follow Us*/
 
 .follow-us {
