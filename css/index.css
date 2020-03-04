@@ -567,11 +567,11 @@ img {
     margin-left: 1.9rem;
   }
 }
-.about-photos .about-media .follow-about i {
-  margin-top: 5%;
-}
 .about-photos .about-media .follow-about a {
   width: 15%;
+}
+.about-photos .about-media .follow-about a i {
+  margin-top: 5%;
 }
 @media (max-width: 800px) {
   .about-photos .about-media .follow-about a {
