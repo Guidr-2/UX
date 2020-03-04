@@ -2,21 +2,47 @@
 /*Navigation section*/
 .main-nav{
     .custom-layout(space-between, center);
-     margin: 2% 0;
-     margin-left: 9%;
+    margin-top: 2%;
+    background: @nav-bg;
+      
 
      .logo{
-        width: 30%;
+        width: 27%;
+        padding: 1%;        
     }//logo
     
     .nav-links{
         .custom-layout(flex-end, center);
         width: 70%;
+        padding-right: 3%;
 
         a {
 			width: 20%;
-			.custom-a(#292929, 1.8rem, none);
-			text-align: center;
+            .custom-a(@nav-hover-text-color, 2rem, none, @nav-bg);
+            text-align: center;
+            font-weight: bolder;
+            padding: 1%;
+            transition: 0.6s;
+            border-right: 2px dotted transparent;
+            border-left: 2px dotted transparent;
+
+            &:hover{
+                @media @mobile{
+                    padding-bottom: 10px;
+                }
+
+            }
+
+            @media @tablet{
+                width: 28%;
+                
+            }
+            @media @mobile{
+                width: 30%;
+                font-weight: normal;
+                font-size: 2rem;
+            }
+            
         }//this closes a
 
     }//this closes .nav-links

@@ -1,0 +1,57 @@
+
+
+//footer section
+footer {
+    background: @footer-bg;
+    color: @footer-links-color;
+    font-size: 12px;
+    padding: 10px 0;
+    .custom-layout(center,center);
+    flex-direction: column;
+
+    .blog-company-links {
+        max-width: 1000px;
+        width: 60%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        @media @mobile{       
+            grid-template-columns: 1fr;
+        }
+    }//blog-company-links of footer
+
+    li {
+        line-height: 2.5;
+        text-align: center;
+
+        a{
+            color: @footer-links-color;
+        }
+        
+    }//li of footer
+
+    .copy{
+        padding-top: 1%;
+    }//copy of footer
+
+    h3{
+        font-weight: bold;
+    }//h3 of footer
+
+    @media @tablet{      
+        padding:0;
+    }
+
+    @media @mobile{       
+        margin-top: 2%;
+    }
+    
+}//footer
+
+
+
+
+
+
+

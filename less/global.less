@@ -13,10 +13,12 @@
   html,
   body {
     font-family: "Roboto", sans-serif;
-  
+    background: #fff; 
+    color: #000;
     //-------------------
     display: flex;
     justify-content: center;
+    
   }
   
   h1,
@@ -24,7 +26,8 @@
   h3,
   h4,
   h5 {
-    font-family: "Indie Flower", cursive;
+    //font-family: "Indie Flower", cursive;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
   }
   
   h1 {
@@ -32,8 +35,11 @@
   }
   
   h2 {
-    font-size: 3.2rem;
+    font-size: 3.9rem;
     padding-bottom: 10px;
+  }
+  h3{
+    font-size: 1.5rem;
   }
   
   h4 {
@@ -51,4 +57,42 @@
     max-width: 100%;
     height: auto;
   }
+
+  .wrapper{
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    @media @tablet{
+      width: 100%;
+      max-width: 800px;
+    }
+
+    @media @mobile{
+      width: 97%;
+      max-width: 500px;
+    }
+    
+
+  }
+
+  .container {
+    
+    width: 98%;
+    max-width: 1000px;
+    margin: auto;
+
+    @media @tablet{
+      width: 98%;
+      max-width: 800px;
+      margin-left: 2%;
+      margin-right: 2%;
+    }
+    @media @mobile{
+      width: 100%;
+      max-width: 500px;
+    }
+}
   

@@ -1,0 +1,143 @@
+.showcase {
+    .custom-layout(flex-start,center);
+    flex-direction: column;
+    text-align: center;
+    .custom-showcase-img(400px,url("../img/home-page-showcase.png") no-repeat center center/cover );
+    
+    .showcase-title{
+        padding-bottom: 1%;
+        width: 100%;
+        //background-color: rgba(4, 22, 37, 0.1);
+        background-color: rgba(8, 52, 88, 0.1);
+    }
+
+    h2{
+        
+        padding-top: 2%;
+        letter-spacing: 0.15rem;
+        color: white;
+        text-shadow: 2px 4px 1px #3e5e78;
+
+        @media @tablet{
+            font-size: 3.5rem;
+        }
+
+        @media @mobile{
+            font-size: 3rem;
+        }
+    }//h2
+}//showcase
+
+.home-photos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 40px;
+
+
+
+    img {
+        width: 100%;
+        margin-bottom: 20px;
+
+    }//img of home-photos
+
+    h3 {
+        font-size: 2.5rem;
+        margin-bottom: 5px;
+        text-align: center;
+    }//h3 of home-photos
+
+    a{
+        .custom-a-read-more();
+    }
+
+    @media @tablet{
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    @media @mobile{
+        grid-template-columns: repeat(1, 1fr); 
+    }
+
+}//home-photos
+
+.central-text{
+    margin: 1% 0;
+}
+
+//middle section
+.middle{
+    display: grid;
+    //grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+    margin-bottom: 1%;
+
+    @media @tablet{
+        grid-template-columns: 1fr;
+    }
+
+    img {
+        width: 100%;
+        margin-bottom: 20px;
+    }//img of home-photos
+}
+
+
+
+.read-more-details{
+    display: grid;
+    
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 2%;
+    margin-top: 2%;
+    h3{
+        font-size: 3rem;
+        text-align: center;
+        padding-bottom: 1%;
+    }
+
+    @media @tablet{
+        grid-template-columns: 1fr;
+    }
+
+    img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
+.reverse{
+    grid-template-columns: 2fr 1fr;
+
+    @media @tablet{
+        grid-template-columns: 1fr;
+        img{
+            display: none;
+        }
+    }
+}
+
+/* Follow Us*/
+
+.follow-us {
+    .custom-layout(center,center);
+    margin: 1%;
+   
+
+     * {
+        margin-right: 20px;
+    } //end of Follow us
+}
+
+
+
+
+.button{
+    .custom-button(30%);
+    margin-right: 10%;
+}
+
+
+
+
