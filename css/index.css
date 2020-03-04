@@ -507,13 +507,12 @@ img {
   }
 }
 .who-we-are {
-  margin-top: 2%;
-  text-align: center;
-  margin: 2% 0;
+  margin: 4%;
 }
 .who-we-are h2 {
   font-size: 3rem;
   text-transform: uppercase;
+  text-align: center;
 }
 .middle-about {
   width: 80%;
@@ -522,6 +521,9 @@ img {
   grid-template-columns: 27% 70%;
   grid-gap: 5%;
   margin-bottom: 1%;
+}
+.middle-about p {
+  margin-top: 6%;
 }
 @media (max-width: 800px) {
   .middle-about {
@@ -552,6 +554,43 @@ img {
   font-size: 2rem;
   text-align: center;
 }
+.about-photos .about-media .about-story {
+  width: 80%;
+  margin-left: 2.2rem;
+}
+.about-photos .about-media .about-story h3,
+.about-photos .about-media .about-story h4 {
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .about-photos .about-media .about-story {
+    margin-left: 1.9rem;
+  }
+}
+.about-photos .about-media .follow-about i {
+  margin-top: 5%;
+}
+.about-photos .about-media .follow-about a {
+  width: 15%;
+}
+@media (max-width: 800px) {
+  .about-photos .about-media .follow-about a {
+    width: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .about-photos .about-media .follow-about a {
+    width: 4rem;
+  }
+}
+.about-photos .about-media .follow-about .linkedin img {
+  margin: 2%;
+}
+@media (max-width: 800px) {
+  .about-photos .about-media .follow-about .linkedin {
+    margin-top: 6%;
+  }
+}
 @media (max-width: 800px) {
   .about-photos .about-media {
     display: flex;
@@ -574,19 +613,6 @@ img {
   }
   .about-photos .about-media img {
     width: 60%;
-  }
-}
-.follow-about a {
-  width: 10%;
-}
-@media (max-width: 800px) {
-  .follow-about a {
-    width: 3rem;
-  }
-}
-@media (max-width: 500px) {
-  .follow-about a {
-    width: 4rem;
   }
 }
 footer {

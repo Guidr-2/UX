@@ -50,14 +50,14 @@
 }//about-showcase
 
 .who-we-are{
-    margin-top: 2%;
-    text-align: center;
-    margin: 2% 0;
+    margin: 4%;
     
     h2{
         font-size: 3rem;
         text-transform: uppercase;
+        text-align: center;
     }
+
     
 }
 
@@ -70,6 +70,10 @@
     grid-template-columns: 27% 70%;
     grid-gap: 5%;
     margin-bottom: 1%;
+
+    p{
+        margin-top: 6%;
+    }
     
 
     @media @tablet{
@@ -95,24 +99,65 @@
        
     }
 
-    //}//img of home-photos
+    
 }
 .about-photos{
-   
     h4{
         padding-top: 3%;
         font-size: 2rem;
         text-align: center;
-    }
+    }//h4 of about-photos
     .about-media{
         
+        .about-story{
+           
+            width: 80%;
+            margin-left:2.2rem;
+            h3,h4{
+                text-align: center;
+            }
+            
+            @media @mobile{
+                margin-left:1.9rem;
+            }
+        }//about-story of about-media
+
+        .follow-about{
+    
+            i{
+                margin-top: 5%;
+            }
+            a{
+                width: 15%;
+        
+                @media @tablet{
+                    width: 3rem;
+                }
+                @media @mobile{
+                    width: 4rem;
+                }
+            }//a of follow-about
+        
+            .linkedin{
+               img{
+                margin: 2%;
+               }
+                @media @tablet{
+                    margin-top: 6%;
+                }
+               
+                
+            }//linkedin
+        }//follow-about of about-media
+
+
         @media @tablet{
             .custom-layout(center,center);
             flex-direction: column;
             img{
                 width: 80%;
             }
-        }
+        }//@media tablet of about-media
     
     @media @mobile{
         .custom-layout(center,center);
@@ -120,20 +165,8 @@
         img{
             width: 60%;
         }
-    }
-}
+    }////@media mobile of about-media
+}//about-media
     
-}
+}//about-photos
 
-.follow-about{
-    a{
-        width: 10%;
-
-        @media @tablet{
-            width: 3rem;
-        }
-        @media @mobile{
-            width: 4rem;
-        }
-    }
-}

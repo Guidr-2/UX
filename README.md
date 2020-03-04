@@ -1,5 +1,7 @@
 # Guidr
 
+## Marketing pages
+
 Guidr helps back country guides of all types log their private/professional trips.  Guides will be able to use Guidr to build their Outdoor Resume. Users can login, create read and update their trips with a trip type, location, duration and whether it's private or professional.
 
 ## Task 1:  User can sign up as a "Guide" by providing a unique username and a password that will serve as their login/authentication credentials. (mobile, web)
