@@ -555,6 +555,9 @@ img {
   font-size: 2rem;
   text-align: center;
 }
+.about-photos .about-media p {
+  height: 20%;
+}
 .about-photos .about-media .about-story {
   width: 80%;
   margin-left: 2.2rem;
@@ -568,11 +571,20 @@ img {
     margin-left: 1.9rem;
   }
 }
+.about-photos .about-media .follow-about {
+  width: 98%;
+  height: 15%;
+}
 .about-photos .about-media .follow-about a {
   width: 15%;
 }
-.about-photos .about-media .follow-about a i {
-  margin-top: 5%;
+.about-photos .about-media .follow-about a img {
+  margin: 2%;
+}
+@media (max-width: 800px) {
+  .about-photos .about-media .follow-about a {
+    margin-top: 6%;
+  }
 }
 @media (max-width: 800px) {
   .about-photos .about-media .follow-about a {
@@ -582,14 +594,6 @@ img {
 @media (max-width: 500px) {
   .about-photos .about-media .follow-about a {
     width: 4rem;
-  }
-}
-.about-photos .about-media .follow-about .linkedin img {
-  margin: 2%;
-}
-@media (max-width: 800px) {
-  .about-photos .about-media .follow-about .linkedin {
-    margin-top: 6%;
   }
 }
 @media (max-width: 800px) {
@@ -647,7 +651,19 @@ footer li a {
   color: #616161;
 }
 footer .copy {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding-top: 1%;
+  width: 80%;
+}
+footer .copy div {
+  margin-bottom: 2%;
+}
+footer .copy div a {
+  color: #616161;
 }
 footer h3 {
   font-weight: bold;
