@@ -292,6 +292,7 @@ img {
   background-color: rgba(8, 52, 88, 0.1);
 }
 .showcase h2 {
+  font-style: oblique;
   padding-top: 2%;
   letter-spacing: 0.15rem;
   color: white;
@@ -306,6 +307,10 @@ img {
   .showcase h2 {
     font-size: 3rem;
   }
+}
+.home-img img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
 }
 .home-photos {
   display: grid;
@@ -479,6 +484,7 @@ img {
 .about-showcase .box-inside-showcase h2 {
   padding-bottom: 1%;
   letter-spacing: 0.15rem;
+  font-style: oblique;
 }
 @media (max-width: 800px) {
   .about-showcase .box-inside-showcase h2 {
@@ -510,6 +516,7 @@ img {
   margin: 4%;
 }
 .who-we-are h2 {
+  font-style: oblique;
   font-size: 3rem;
   text-transform: uppercase;
   text-align: center;
@@ -550,6 +557,9 @@ img {
     margin-bottom: 3%;
   }
 }
+.about-photos .team-member {
+  border-radius: 8px;
+}
 .about-photos h4 {
   padding-top: 3%;
   font-size: 2rem;
@@ -583,7 +593,7 @@ img {
 }
 @media (max-width: 800px) {
   .about-photos .about-media .follow-about a {
-    margin-top: 6%;
+    margin-top: 4%;
   }
 }
 @media (max-width: 800px) {
