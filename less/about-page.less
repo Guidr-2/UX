@@ -15,12 +15,12 @@
         color: white;
         text-shadow: 1px 1px 1px #36383a;
         text-align: center;
-       
+        
 
     h2{
         padding-bottom: 1%;
         letter-spacing: 0.15rem;
-         
+        font-style: oblique;
         @media @tablet{
             font-size: 3.5rem;
         }
@@ -53,9 +53,11 @@
     margin: 4%;
     
     h2{
+        font-style: oblique;
         font-size: 3rem;
         text-transform: uppercase;
         text-align: center;
+        letter-spacing: 7px;
     }
 
     
@@ -73,6 +75,7 @@
 
     p{
         margin-top: 6%;
+       
     }
     
 
@@ -102,12 +105,18 @@
     
 }
 .about-photos{
+    .team-member{
+        border-radius: 8px;
+    }
     h4{
         padding-top: 3%;
         font-size: 2rem;
         text-align: center;
     }//h4 of about-photos
     .about-media{
+        p{
+            height: 20%;
+        }
         
         .about-story{
            
@@ -123,12 +132,18 @@
         }//about-story of about-media
 
         .follow-about{
-    
-            i{
-                margin-top: 5%;
-            }
+    width: 98%;
+    height: 15%;
+
+           
             a{
                 width: 15%;
+                img{
+                    margin: 2%;
+                   }
+                    @media @tablet{
+                        margin-top: 4%;
+                    }
         
                 @media @tablet{
                     width: 3rem;
@@ -138,16 +153,6 @@
                 }
             }//a of follow-about
         
-            .linkedin{
-               img{
-                margin: 2%;
-               }
-                @media @tablet{
-                    margin-top: 6%;
-                }
-               
-                
-            }//linkedin
         }//follow-about of about-media
 
 
